@@ -4,7 +4,12 @@
       "PowerShell(& \"C:\\\\Users\\\\adria\\\\.local\\\\bin\\\\python3.14.exe\" -m pip install python-pptx -q 2>&1)",
       "PowerShell(& \"C:\\\\Users\\\\adria\\\\.local\\\\bin\\\\python3.14.exe\" -c \"import pptx; print\\('ok'\\)\" 2>&1)",
       "PowerShell(& \"C:\\\\Users\\\\adria\\\\.local\\\\bin\\\\python3.14.exe\" -m pip install python-pptx --break-system-packages -q 2>&1)",
-      "Read(//c/Users/adria/**)"
+      "Read(//c/Users/adria/**)",
+      "Bash(C:\\\\Users\\\\adria\\\\.local\\\\bin\\\\python3.14.exe -c \"import fitz; print\\('fitz available'\\)\")",
+      "PowerShell(& \"C:\\\\Users\\\\adria\\\\.local\\\\bin\\\\python3.14.exe\" -c \"import fitz; print\\('fitz available'\\)\" 2>&1)",
+      "PowerShell(& \"C:\\\\Users\\\\adria\\\\.local\\\\bin\\\\python3.14.exe\" -m pip install pymupdf --break-system-packages 2>&1)",
+      "Bash(git stash *)",
+      "Bash(git pull *)"
     ]
   }
 }
