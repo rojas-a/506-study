@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(& \"C:\\\\Users\\\\adria\\\\.local\\\\bin\\\\python3.14.exe\" -m pip install python-pptx -q 2>&1)",
+      "PowerShell(& \"C:\\\\Users\\\\adria\\\\.local\\\\bin\\\\python3.14.exe\" -c \"import pptx; print\\('ok'\\)\" 2>&1)",
+      "PowerShell(& \"C:\\\\Users\\\\adria\\\\.local\\\\bin\\\\python3.14.exe\" -m pip install python-pptx --break-system-packages -q 2>&1)",
+      "Read(//c/Users/adria/**)"
+    ]
+  }
+}
