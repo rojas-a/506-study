@@ -7,11 +7,9 @@
 
 ### Multiple Choice
 
-**1.** What is the Euclidean Distance between i and j?
+**1.** What is the Euclidean Distance between i and j? *(i = (0,0), j = (1,1))*
 
-![Lab 2 Q1 — coordinate plot with i(0,0) and j(1,1)](study_guide_images/lab2_q1_coords.png)
-
-- (a) √2 ✓
+- (a) √2  
 - (b) 2
 - (c) 4
 - (d) √2/2
@@ -21,28 +19,25 @@
 **2.** What is the manhattan distance between i and j (using coordinates from above)?
 
 - (a) √2
-- (b) 2 ✓
+- (b) 2  
 - (c) 4
 - (d) √2/2
 
 ---
 
 **3.** What is the Jaccard similarity between image 1 and image 2?
+*(Image 1: p₁=1, p₂=1, p₃=0, p₄=1 | Image 2: p₁=0, p₂=1, p₃=1, p₄=0)*
 
-![Lab 2 Q3 — pixel feature table for Image 1 and Image 2](study_guide_images/lab2_q3_table.png)
-
-- (a) 1/4 ✓
+- (a) 1/4  
 - (b) 1/2
 - (c) 1
 - (d) 0
 
 ---
 
-**4.** What is the cosine similarity between A and B? *(Hint: cos(θ) = A·B / |A||B|)*
+**4.** What is the cosine similarity between A and B? *(A = (1,1), B = (0,1); Hint: cos(θ) = A·B / |A||B|)*
 
-![Lab 2 Q4 — vector plot with A(1,1) and B(0,1)](study_guide_images/lab2_q4_cosine.png)
-
-- (a) √2/2 ✓
+- (a) √2/2  
 - (b) π/4
 - (c) 1
 - (d) −1
@@ -50,10 +45,9 @@
 ---
 
 **5.** What is the jaccard similarity between user 1 and user 0?
+*(User 1: The Matrix=1, Arrival=0, Dune=0, Star Wars=1, Iron Man=1 | User 2: The Matrix=0, Arrival=1, Dune=0, Star Wars=1, Iron Man=1)*
 
-![Lab 2 Q5 — movie rating table for User 1 and User 2](study_guide_images/lab2_q5_table.png)
-
-- (a) 1/2 ✓
+- (a) 1/2  
 - (b) 3/4
 - (c) 1
 - (d) 0
@@ -73,19 +67,17 @@
 
 ### Multiple Choice
 
-**1.** Is the following a possible output from K-means clustering?
-
-![Lab 3 Q1 — two overlapping clusters C1 and C2](study_guide_images/lab3_q1_clusters.png)
+**1.** Is the following a possible output from K-means clustering? *(shows two overlapping clusters C1 and C2)*
 
 - (a) Yes
-- (b) No ✓
+- (b) No  
 
 ---
 
 **2.** For a dataset X with N points, when k = 1, the total cost is:
 
 - (a) var(x)
-- (b) N ∗ var(x) ✓
+- (b) N ∗ var(x)  
 - (c) 1
 - (d) 0
 
@@ -96,7 +88,7 @@
 - (a) var(x)
 - (b) N ∗ var(x)
 - (c) 1
-- (d) 0 ✓
+- (d) 0  
 
 ---
 
@@ -104,7 +96,7 @@
 
 - (a) 1 and 5.5
 - (b) 0 and 6
-- (c) -0.5 and 6 ✓
+- (c) -0.5 and 6  
 - (d) 0 and 3.25
 
 ---
@@ -112,7 +104,7 @@
 **5.** Consider the 1-dimensional dataset: [3, 5, x]. With k = 2, what is the smallest integer value of x, (x > 5) for which x will always be alone in its own cluster no matter the initialization?
 
 - (a) 6
-- (b) 10 ✓
+- (b) 10  
 - (c) 8
 - (d) 9
 
@@ -120,7 +112,7 @@
 
 **6.** Lloyd's algorithm always converges
 
-- (a) True ✓
+- (a) True  
 - (b) False
 
 ---
@@ -154,103 +146,89 @@
 
 ### Multiple Choice
 
-**1.** Is the following a possible output of K-means++ clustering?
-
-![Lab 4 Q1 — circle divided into 3 sectors C1, C2, C3](study_guide_images/lab4_q1_circle.png)
+**1.** Is the following a possible output of K-means++ clustering? *(shows three roughly equal pie-slice clusters)*
 
 - (a) Yes
-- (b) No ✓
+- (b) No  
 
 ---
 
 **2.** To find the optimal number of clusters in K-means, we run K-means multiple times for different values of k then we pick the one with the lowest cost
 
 - (a) True
-- (b) False ✓
+- (b) False  
 
 ---
 
 **3.** What does it mean if the silhouette score for a data point is close to 1?
 
-- (a) The cluster is likely tight and far from others ✓
+- (a) The cluster is likely tight and far from others  
 - (b) The point lies on the boundary of clusters
 - (c) The point does not belong in its cluster
 
 ---
 
-**4.** Let k = 2. Is K-means++ with a Euclidean distance-based cost function ideal for the following data?
-
-![Lab 4 Q4 — large elongated cluster and small compact cluster](study_guide_images/lab4_q4_elongated.png)
+**4.** Let k = 2. Is K-means++ with a Euclidean distance-based cost function ideal for the following data? *(shows elongated cluster + compact cluster)*
 
 - (a) Yes, there are clearly two clusters here
 - (b) No, we should use manhattan distance instead to account for the elongated cluster
-- (c) No, k-means performs poorly on this data set because it assumes roughly spherical and equal sized clusters ✓
+- (c) No, k-means performs poorly on this data set because it assumes roughly spherical and equal sized clusters  
 
 ---
 
 **5.** You transform a 2D dataset of concentric circles onto a 1D space using z = (x − x̄)² + (y − ȳ)². Would k-means be able to identify 3 concentric clusters in this new 1 dimensional space?
 
-![Lab 4 Q5 — concentric circle clusters C1, C2, C3](study_guide_images/lab4_q5_concentric.png)
-
-- (a) Yes ✓
+- (a) Yes  
 - (b) No
 
 ---
 
-**6.** How many clusters would be created by cutting the dendrogram as below?
-
-![Lab 4 Q6 — dendrogram with orange horizontal cut line, leaves: 3, 4, 6, 1, 2, 5](study_guide_images/lab4_q6_dendrogram.png)
+**6.** How many clusters would be created by cutting the dendrogram as below? *(dendrogram with horizontal cut line, leaves: 3, 4, 6, 1, 2, 5)*
 
 - (a) 7
 - (b) 6
 - (c) 5
-- (d) 4 ✓
+- (d) 4  
 
 ---
 
-**7.** Which link function(s) would make Hierarchical clustering well suited for the following dataset?
+**7.** Which link function(s) would make Hierarchical clustering well suited for the following dataset? *(elongated clusters separated from compact cluster)*
 
-![Lab 4 Q7 — elongated cluster separated from compact cluster](study_guide_images/lab4_q7_elongated.png)
-
-- (a) Single-link distance ✓
+- (a) Single-link distance  
 - (b) Complete-link distance
 - (c) Ward's distance
 - (d) All of the above
 
 ---
 
-**8.** Which clusters get merged if using Euclidean and complete-link distance?
-
-![Lab 4 Q8 — scatter plot with labeled points A(0,0), B(1,1), C(4,1), D(4,0), E(0,−2), F(−1,−2) with pre-drawn clusters AB, CD, EF](study_guide_images/lab4_q8_scatter.png)
+**8.** Which clusters get merged if using Euclidean and complete-link distance? *(shows clusters AB, CD, EF with coordinates A(0,0), B(1,1), C(4,1), D(4,0), E(0,−2), F(−1,−2))*
 
 - (a) AB and CD
 - (b) CD and EF
-- (c) AB and EF ✓
+- (c) AB and EF  
 
 ---
 
 **9.** Using Euclidean and complete-link distance for A = (1, 2), B = (3, 5), C = (4, 1), D = (7, 3), E = (6, 6) what is the merging order?
 
 - (a) AC → DE → BDE → ABCDE
-- (b) AC → DE → ABC → ABCDE ✓
+- (b) AC → DE → ABC → ABCDE  
 - (c) AC → ABC → DE → ABCDE
 
 ---
 
 **10.** How would you compare the clustering represented by the left plot versus the right plot? (select all that apply)
 
-![Lab 4 Q10 — two silhouette plots side by side (3-cluster vs 4-cluster)](study_guide_images/lab4_q10_silhouette.png)
-
-- (a) the left plot represents 3 clusters, the right plot represents 4 clusters ✓
+- (a) the left plot represents 3 clusters, the right plot represents 4 clusters  
 - (b) the right plot has more data than the left plot
-- (c) the gray cluster (top one) on the left plot has more points than the gray cluster (top one) on the right ✓
+- (c) the gray cluster (top one) on the left plot has more points than the gray cluster (top one) on the right  
 - (d) the left plot contains at least one point with a negative silhouette score
 
 ---
 
 **11.** We TYPICALLY prefer clusterings with higher average silhouette scores and uniformly distributed silhouette scores across data points
 
-- (a) True ✓
+- (a) True  
 - (b) False
 
 ---
@@ -258,7 +236,7 @@
 **12.** What is the average silhouette score for a clustering with k = N?
 
 - (a) 0
-- (b) 1 ✓
+- (b) 1  
 - (c) ∞
 - (d) √k
 
@@ -281,21 +259,19 @@
 
 ### Multiple Choice
 
-**1.** How will point p be assigned?
+**1.** How will point p be assigned? *(Min_pts = 3; p is near core point k with p partially outside k's epsilon neighborhood)*
 *(Note: we are assuming that for a point to be considered a part of p's epsilon neighborhood, it must be entirely in the circle representing p's neighborhood)*
-
-![Lab 5 Q1 — DBScan diagram: Min_pts=3, point p partially outside core point k's epsilon neighborhood](study_guide_images/lab5_q1_dbscan.png)
 
 - (a) p is a core point, so we will iterate on its entire epsilon neighborhood
 - (b) p is a border point, so we will iterate on its entire epsilon neighborhood
-- (c) p is a border point, so we will assign it to k's cluster and move onto the other points in k's neighborhood ✓
+- (c) p is a border point, so we will assign it to k's cluster and move onto the other points in k's neighborhood  
 - (d) p is a noise point, so we won't assign it to any cluster
 
 ---
 
 **2.** Keeping epsilon the same and increasing min_pts in DBScan will likely increase the number of noise points
 
-- (a) True ✓
+- (a) True  
 - (b) False
 
 ---
@@ -303,24 +279,20 @@
 **3.** Keeping epsilon the same and increasing min_pts in DBScan will likely increase the number of core points
 
 - (a) True
-- (b) False ✓
+- (b) False  
 
 ---
 
-**4.** Is the following a possible output of DBScan?
-
-![Lab 5 Q4 — 4 petal-shaped clusters C1, C2, C3, C4 overlapping at center](study_guide_images/lab5_q4_petals.png)
+**4.** Is the following a possible output of DBScan? *(shows 4 petal-shaped clusters C1, C2, C3, C4 overlapping at center)*
 
 - (a) Yes
-- (b) No ✓
+- (b) No  
 
 ---
 
-**5.** Is DBScan well suited for the following dataset?
+**5.** Is DBScan well suited for the following dataset? *(shows spiral/concentric ring dataset)*
 
-![Lab 5 Q5 — spiral/concentric ring dataset](study_guide_images/lab5_q5_spiral.png)
-
-- (a) Yes ✓
+- (a) Yes  
 - (b) No
 
 ---
@@ -328,49 +300,43 @@
 **6.** DBScan, like K-means, requires you to specify the number of clusters
 
 - (a) Yes
-- (b) No ✓
+- (b) No  
 
 ---
 
 **7.** Using cosine distance to calculate epsilon neighborhoods would likely enable us to detect the two natural clusters here.
 
-![Lab 5 Q7 — spiral dataset (same shape as Q5)](study_guide_images/lab5_q7_spiral2.png)
-
 - (a) True
-- (b) False ✓
+- (b) False  
 
 ---
 
 **8.** One way to initialize GMM clustering is to use K-means since it also performs well when clusters are Gaussian
 
-- (a) True ✓
+- (a) True  
 - (b) False
 
 ---
 
 **9.** In GMM, what is the likelihood of the data (with N data points) when k=N
 
-- (a) ∞ ✓
+- (a) ∞  
 - (b) −∞
 - (c) 1
 - (d) 0
 
 ---
 
-**10.** Is the following a possible output from K-means++ clustering?
+**10.** Is the following a possible output from K-means++ clustering? *(same spiral/concentric dataset)*
 
-![Lab 5 Q10 — 4 petal-shaped clusters (same shape as Q4)](study_guide_images/lab5_q10_petals.png)
-
-- (a) Yes ✓
+- (a) Yes  
 - (b) No
 
 ---
 
-**11.** Is the following a possible output of K-means clustering?
+**11.** Is the following a possible output of K-means clustering? *(3-cluster spiral/petal dataset)*
 
-![Lab 5 Q11 — 3-cluster petal/spiral dataset with C1, C2, C3](study_guide_images/lab5_q11_petals3.png)
-
-- (a) Yes ✓
+- (a) Yes  
 - (b) No
 
 ---
@@ -378,40 +344,36 @@
 **12.** The difference between K-means and K-means++ is that K-means++ is faster, hence the ++
 
 - (a) True
-- (b) False ✓
+- (b) False  
 
 ---
 
 **13.** Consider the 1-dimensional dataset {4,5,x}. With k = 2 and x > 5, what is the smallest value of x BEYOND which x will always be in its own cluster?
 
-- (a) 7 ✓
+- (a) 7  
 - (b) 9
 - (c) 6
 - (d) 8
 
 ---
 
-**14.** Is the following a possible output from k-means++ clustering?
+**14.** Is the following a possible output from k-means++ clustering? *(C1 = single point, C2 = large cluster)*
 
-![Lab 5 Q14 — C1 = single point cluster, C2 = large cluster with many points](study_guide_images/lab5_q14_clusters.png)
-
-- (a) Yes ✓
+- (a) Yes  
 - (b) No
 
 ---
 
-**15.** Is the following a possible output of k-means clustering?
+**15.** Is the following a possible output of k-means clustering? *(C1 large sector, C2 and C3 smaller sectors — pie chart cut)*
 
-![Lab 5 Q15 — circle divided into C1 (large sector), C2, C3 (smaller sectors) by straight lines](study_guide_images/lab5_q15_circle.png)
-
-- (a) Yes ✓
+- (a) Yes  
 - (b) No
 
 ---
 
 **16.** One way to divide clusters in Hierarchical Clustering's Divisive Algorithm (as opposed to agglomerative) is to use a partitional clustering method like K-means.
 
-- (a) True ✓
+- (a) True  
 - (b) False
 
 ---
@@ -420,26 +382,22 @@
 
 - (a) AB → ABD → ABCD
 - (b) AB → CD → ABCD
-- (c) AB → ABC → ABCD ✓
+- (c) AB → ABC → ABCD  
 
 ---
 
-**18.** How many clusters would be created by cutting the dendrogram below as shown?
-
-![Lab 5 Q18 — dendrogram with orange cut line, leaves: 3, 4, 6, 1, 2, 5, 7, 10, 9, 8](study_guide_images/lab5_q18_dendrogram.png)
+**18.** How many clusters would be created by cutting the dendrogram below as shown? *(dendrogram with leaves: 3, 4, 6, 1, 2, 5, 7, 10, 9, 8)*
 
 - (a) 5
 - (b) 4
 - (c) 6
-- (d) 7 ✓
+- (d) 7  
 
 ---
 
-**19.** Which clusters get merged next if using Euclidean and complete-link distances?
+**19.** Which clusters get merged next if using Euclidean and complete-link distances? *(clusters AB, CD, EF with A(0,0), B(1,1), C(4,1), D(4,0), E(−1,−2), F(0,−2))*
 
-![Lab 5 Q19 — scatter plot with clusters AB, CD, EF; points A(0,0), B(1,1), C(4,1), D(4,0), E(−1,−2), F(0,−2)](study_guide_images/lab5_q19_scatter.png)
-
-- (a) AB and EF ✓
+- (a) AB and EF  
 - (b) AB and CD
 - (c) CD and EF
 
@@ -448,13 +406,13 @@
 **20.** The Manhattan distance is always less than or equal to the Euclidean distance between two points in a 2D space.
 
 - (a) True
-- (b) False ✓
+- (b) False  
 
 ---
 
 **21.** In n-dimensional space the Manhattan distance equals the Euclidean distance for
 
-- (a) Points where all the coordinates are the same except for one ✓
+- (a) Points where all the coordinates are the same except for one  
 - (b) Points where all the coordinates are different except for one
 - (c) Points where all the coordinates are zero except for one
 - (d) all of the above
@@ -465,7 +423,7 @@
 
 - (a) Euclidean distance
 - (b) Chebyshev Distance
-- (c) Cosine Distance ✓
+- (c) Cosine Distance  
 - (d) Manhattan Distance
 
 ---
@@ -473,7 +431,7 @@
 **23.** What is the Jaccard distance between two completely different documents (i.e. no words in common at all)?
 
 - (a) -1
-- (b) 1 ✓
+- (b) 1  
 - (c) 0
 - (d) Depends on the size of the documents
 
@@ -481,7 +439,7 @@
 
 **24.** How many parameters does GMM need to estimate for k clusters and 1D data?
 
-- (a) 3k ✓
+- (a) 3k  
 - (b) k
 - (c) 4k
 - (d) √k
@@ -491,13 +449,13 @@
 **25.** Since outliers most likely don't belong to any cluster, the probabilities of belonging to each cluster, assigned by a GMM, will all be small
 
 - (a) True
-- (b) False ✓
+- (b) False  
 
 ---
 
 **26.** What type of distribution does each cluster follow in a GMM?
 
-- (a) Normal ✓
+- (a) Normal  
 - (b) Geometric
 - (c) Hypergeometric
 - (d) Poisson
@@ -511,24 +469,22 @@
 
 **1.** As k increases, the frobenius distance between a matrix and its rank-k approximation decreases
 
-- (a) True ✓
+- (a) True  
 - (b) False
 
 ---
 
 **2.** The rank-k approximation of an n × m matrix also has dimension n × m.
 
-- (a) True ✓
+- (a) True  
 - (b) False
 
 ---
 
-**3.** What is the rank of the following dataset?
-
-![Lab 7 Q3 — scatter plot of green points along axes A and B](study_guide_images/lab7_q3_scatter.png)
+**3.** What is the rank of the following dataset? *(scatter plot showing points roughly along a single line in 2D space)*
 
 - (a) 1
-- (b) 2 ✓
+- (b) 2  
 - (c) 3
 - (d) 4
 
@@ -537,7 +493,7 @@
 **4.** Let A be an m×n matrix of rank r. After using SVD for feature extraction, we will still have an m × n matrix.
 
 - (a) True
-- (b) False ✓
+- (b) False  
 
 ---
 ---
@@ -549,13 +505,13 @@
 **1.** KNN has a long training time
 
 - (a) True
-- (b) False ✓
+- (b) False  
 
 ---
 
 **2.** if k is too large in KNN, this can lead to underfitting
 
-- (a) True ✓
+- (a) True  
 - (b) False
 
 ---
@@ -564,14 +520,14 @@
 
 - (a) K-means
 - (b) DBScan
-- (c) LSA (Latent Semantic Analysis) ✓
+- (c) LSA (Latent Semantic Analysis)  
 - (d) Hierarchical Clustering
 
 ---
 
 **4.** What distance function should we use to identify the semantic similarity of LSA-generated embeddings?
 
-- (a) Cosine ✓
+- (a) Cosine  
 - (b) Euclidean
 - (c) Manhattan
 - (d) Chebyshev
@@ -626,14 +582,14 @@
 
 **1.** The estimate β̂ is a random variable with mean β
 
-- (a) True ✓
+- (a) True  
 - (b) False
 
 ---
 
 **2.** According to linear regression, the following is a linear model: Ŷ = β₀ + β₁X + β₂X²
 
-- (a) True ✓
+- (a) True  
 - (b) False
 
 ---
@@ -641,41 +597,35 @@
 **3.** According to linear regression, the following is a linear model: Ŷ = β₀ + β₁X + β₂²X²
 
 - (a) True
-- (b) False ✓
+- (b) False  
 
 ---
 
 **4.** Let's say α = 5%. What are we likely to conclude if we get a p-value of 0.03?
 
-- (a) The likelihood of observing our data under the null hypothesis is low, so we reject the null hypothesis ✓
+- (a) The likelihood of observing our data under the null hypothesis is low, so we reject the null hypothesis  
 - (b) The likelihood of observing our data under the null hypothesis is low, so we FAIL to reject the null hypothesis
 - (c) The likelihood of observing our data under the null hypothesis is low, so our observation is wrong, and we fail to reject the null hypothesis
 
 ---
 
-**5.** Does the following plot indicate homoscedasticity?
-
-![Lab 11 Q5 — Residuals vs Fitted plot](study_guide_images/lab11_q5_residuals.png)
+**5.** Does the following plot indicate homoscedasticity? *(residuals vs fitted plot showing roughly constant band)*
 
 - (a) Yes
-- (b) No ✓
+- (b) No  
 
 ---
 
-**6.** Does this NQQ plot support the normality of residuals assumption for linear regression?
+**6.** Does this NQQ plot support the normality of residuals assumption for linear regression? *(Q-Q plot showing points following diagonal closely)*
 
-![Lab 11 Q6 — Normal Q-Q plot](study_guide_images/lab11_q6_qqplot.png)
-
-- (a) Yes ✓
+- (a) Yes  
 - (b) No
 
 ---
 
-**7.** The following correlation matrix is indicative of high multicollinearity
+**7.** The following correlation matrix is indicative of high multicollinearity *(heatmap showing 3 features highly correlated with each other)*
 
-![Lab 11 Q7 — Correlation heatmap showing feat_a, feat_b, feat_c highly correlated](study_guide_images/lab11_q7_heatmap.png)
-
-- (a) True ✓
+- (a) True  
 - (b) False
 
 ---
@@ -702,13 +652,13 @@
 **1.** Consider a binary classification task requiring 2 input neurons, 4 total hidden neurons, and 1 output neuron. There will be fewer total parameters (i.e., weights and biases) if all the hidden neurons are placed into one hidden layer as opposed to two hidden layers
 
 - (a) True
-- (b) False ✓
+- (b) False  
 
 ---
 
 **2.** Consider a binary classification task requiring 1 input neuron, 5 total hidden neurons, and 1 output neuron. There are fewer total parameters in a network where all hidden neurons are in a single hidden layer compared to a network where the neurons are split into two hidden layers, where layer 1 has 2 neurons and layer 2 has 3 neurons, respectively.
 
-- (a) True ✓
+- (a) True  
 - (b) False
 
 ---
@@ -716,27 +666,27 @@
 **3.** The activation function A(x) = x applies a non-linear transformation to the hidden layers
 
 - (a) True
-- (b) False ✓
+- (b) False  
 
 ---
 
 **4.** Even with a complex architecture, a neural network with no activation function in hidden layers is the same as a neural network with no hidden layers.
 
-- (a) True ✓
+- (a) True  
 - (b) False
 
 ---
 
 **5.** In deep networks with tanh or sigmoid activations, early layers struggle to learn because gradients become too small by the time they reach the first layer
 
-- (a) True ✓
+- (a) True  
 - (b) False
 
 ---
 
 **6.** You train a fully connected network with tanh activations and sigmoid outputs. Input features have large positive means. What will happen?
 
-- (a) Most hidden features will be constant (either all 1 or all -1) on initialization and take a very long time to change because gradients are very small. ✓
+- (a) Most hidden features will be constant (either all 1 or all -1) on initialization and take a very long time to change because gradients are very small.  
 - (b) It will work fine - neural networks can adapt to any features
 - (c) The network will crash because finding the derivative of the sigmoid function is not possible
 
@@ -744,7 +694,7 @@
 
 **7.** Consider a single ReLU neuron with weights initialized from a symmetric distribution and data centered at 0. If the bias b is initialized to a small positive value (e.g. 0.01), then more than 50% of data points will make the neuron activate.
 
-- (a) True ✓
+- (a) True  
 - (b) False
 
 ---
